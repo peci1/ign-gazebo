@@ -149,7 +149,6 @@ void ContactSensor::Publish()
   if (this->contactsMsg.contact_size() > 0)
   {
     this->pub.Publish(this->contactsMsg);
-    this->contactsMsg.Clear();
   }
 }
 
